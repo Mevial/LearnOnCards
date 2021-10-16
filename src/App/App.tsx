@@ -4,6 +4,9 @@ import {Routes} from "../components/common/routes/Routes";
 import Header from "../components/common/header/Header";
 import {HashRouter} from "react-router-dom";
 
+//hello
+//first step
+
 export const App = () => {
     return (
         <div className="App">
