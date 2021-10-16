@@ -9,7 +9,6 @@ import {Error404} from "../pages/Error404";
 import {SuperComponentsStand} from "../pages/SuperComponentsStand";
 import {SignIn} from "../pages/Sing-in";
 
-
 export const PATH = {
     login: '/login',
     passwordRecovery: '/passwordRecovery',
