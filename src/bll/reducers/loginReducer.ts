@@ -55,9 +55,9 @@ export const loginTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionLogi
                 : (err.message + `, more details in the console`);
             dispatch(setErrorAC(error))
         })
-        .finally(() => {
-            dispatch(setLoadingAC(false))
-        })
+    .finally(() => {
+        dispatch(setLoadingAC(false))
+    })
 }
 
 //types
