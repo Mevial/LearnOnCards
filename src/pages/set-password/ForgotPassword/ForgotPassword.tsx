@@ -26,7 +26,7 @@ export const ForgotPassword: React.FC = () => {
 
     const sendInstruction = () => {
         //тут можно сделать красивей
-        dispatch(sendInstructionTC(email, 'http://localhost:3000/project-front-end#/password-recovery'));
+        dispatch(sendInstructionTC(email, 'https://Mevial.github.io/LearnOnCards#/password-recovery'));
     }
 
     return (
