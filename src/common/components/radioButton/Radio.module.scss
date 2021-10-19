@@ -1,0 +1,42 @@
+.label {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgba(245, 247, 248, 0.15);
+  border: 1px solid #7b8d9a;
+  border-radius: 5px;
+  padding: 3px 15px 3px 3px;
+  margin: 2px;
+  color: inherit;
+
+  &:hover{
+    box-shadow: 0 0 1px #19384d;
+    background-color: rgba(245, 247, 248, 0.26);
+  }
+
+  .radio {
+    appearance: none;
+    height: 13px;
+    width: 13px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    background-color: #113f85;
+    border: 1px solid #000000;
+
+    &:hover {
+      background-color: #3768b4;
+    }
+
+    &:checked {
+      background-color: #9829e1;
+      border: 1px solid #0b255b;
+    }
+
+    &:active {
+      background-color: #9829e1;
+      border: 1px solid #0b255b;
+    }
+  }
+}

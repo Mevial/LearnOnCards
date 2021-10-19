@@ -1,0 +1,12 @@
+@import "../../common/sass/mixins";
+.page {
+  @include wrapper();
+  display: flex;
+  flex-direction: column;
+
+  .btn{
+    font-size: 1em;
+    border-radius: 40px;
+    margin: 15px;
+  }
+}

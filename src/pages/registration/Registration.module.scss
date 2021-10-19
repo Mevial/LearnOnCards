@@ -1,0 +1,19 @@
+@import "../../common/sass/mixins";
+.page {
+  @include wrapper();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    margin: 10px;
+  }
+
+  .error{
+    color: #de2e2e;
+  }
+
+  .input{
+    width: 250px;
+  }
+}

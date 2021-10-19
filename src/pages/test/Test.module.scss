@@ -1,0 +1,25 @@
+@import "../../common/sass/mixins";
+.page{
+  @include wrapper();
+
+  .testBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      margin: 10px;
+    }
+    .input{
+      width: 250px;
+    }
+    .btn{
+      height: 30px;
+    }
+
+    .select{
+    }
+  }
+}
+

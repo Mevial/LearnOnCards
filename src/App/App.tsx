@@ -1,18 +1,13 @@
 import React from 'react';
-
-import {Routes} from "../components/common/routes/Routes";
-import Header from "../components/common/header/Header";
-import {HashRouter} from "react-router-dom";
+import {Routes} from "./routes/Routes";
+import s from './App.module.scss'
+import {Header} from "./header/Header";
 
 export const App = () => {
     return (
-        <div className="App">
-            <HashRouter>
-                <Header/>
-                <Routes/>
-            </HashRouter>
+        <div className={s.app}>
+            <Header/>
+            <Routes/>
         </div>
     );
 }
-
-//1234

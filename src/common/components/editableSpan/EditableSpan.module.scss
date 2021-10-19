@@ -1,0 +1,20 @@
+.divSpan {
+  height: 30px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+
+  .input {
+    width: 190px;
+    background: none;
+  }
+
+  .span {
+    display: inline-block;
+    color: inherit;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+}
+
+

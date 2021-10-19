@@ -1,0 +1,42 @@
+.divInput {
+  display: flex;
+  flex-direction: column;
+
+  .label{
+    color: inherit;
+    width: 100%;
+    text-align: left;
+    padding: 3px 10px;
+  }
+
+  .input {
+    padding: 4px 8px;
+    outline: none;
+    border-radius: 5px;
+    font-size: inherit;
+    color: #111111;
+    margin: 0;
+    background-color: rgba(234, 238, 241, 0.32);
+
+    &:hover {
+      box-shadow: 0 0 1px #595959;
+      background-color: rgba(234, 238, 241, 0.51);
+    }
+
+    &:focus {
+      box-shadow: 0 0 2px #0f17ad;
+      background-color: rgba(234, 238, 241, 0.83);
+    }
+  }
+
+  .errorInput {
+    border: 2px solid rgba(219, 20, 20, 0.5);
+  }
+
+  .error {
+    margin: 3px;
+    color: #db1414;
+    font-size: inherit;
+  }
+}
+

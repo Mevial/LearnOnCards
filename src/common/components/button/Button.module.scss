@@ -1,0 +1,40 @@
+.default {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.45em 2em;
+  outline: none;
+  border-width: 0;
+  border-style: solid none;
+  border-color: #4d89b6 #000 #17407d;
+  border-radius: 50px;
+  background: linear-gradient(#7095bb, #2f5b9a) #17407d;
+  margin: 5px;
+
+  &:hover {
+    background: linear-gradient(#7095bb, #0e2f61) #7095bb;
+    cursor: pointer;
+  }
+  &:active {
+    background: linear-gradient(#17407d, #7095bb) #17407d;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  &:disabled:hover {
+    background: linear-gradient(#7095bb, #2f5b9a) #17407d;
+  }
+}
+
+.red {
+  background: linear-gradient(#e33838, #af2525) #610e0e;
+  border-color: #e33838 #000 #610e0e;
+  &:hover {
+    background: linear-gradient(#e33838, #610e0e) #e33838;
+    cursor: pointer;
+  }
+  &:active {
+    background: linear-gradient(#610e0e, #e33838) #610e0e;
+  }
+}

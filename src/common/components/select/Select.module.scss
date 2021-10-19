@@ -1,0 +1,39 @@
+.select {
+  display: block;
+  width: 130px;
+  padding: 3px 20px;
+  background-color: rgba(245, 247, 248, 0.17);
+  border: 1px solid #7b8d9a;
+  border-radius: 4px;
+  font-size: 1em;
+  appearance: none;
+  color: inherit;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1px #19384d;
+    background-color: rgba(245, 247, 248, 0.26);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 2px #19384d;
+  }
+  &:not([multiple]) {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.4em) 0.25em;
+    background-size: 1em auto; /*------------------------------------------------------------------------------------------------fill-color of arrow---after %23-color--------------*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath d='M70.3 13.8L40 66.3 9.7 13.8z' fill='%237b8d9a'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .option {
+    color: #19384d;
+    background-color: rgba(180, 209, 229, 0.53);
+    font-size: inherit;
+
+    &:checked {
+      color: rgba(180, 209, 229, 0.78);
+      background-color: #19384d;
+    }
+  }
+}
+

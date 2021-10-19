@@ -1,0 +1,15 @@
+.app {
+  text-align: center;
+  background-image: url("../common/assets/images/spacedog.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #e5e5e5;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+}
