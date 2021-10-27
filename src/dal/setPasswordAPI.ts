@@ -1,14 +1,14 @@
 import axios from "axios";
 
-const instanceHeroku = axios.create({
-    baseURL: "https://neko-back.herokuapp.com/2.0/",
-})
-// const instanceLocal = axios.create({
-//     baseURL: "http://localhost:7542/2.0/",
+// const instanceHeroku = axios.create({
+//     baseURL: "https://neko-back.herokuapp.com/2.0/",
 // })
+const instanceLocal = axios.create({
+    baseURL: "http://localhost:7542/2.0/",
+})
 export const forgotPasswordAPI = {
     forgot(data: ForgotPasswordType) {
-        return instanceHeroku.post<ForgotPasswordType, ForgotPasswordResponseType>('auth/forgot', {
+        return instanceLocal.post<ForgotPasswordType, ForgotPasswordResponseType>('auth/forgot', {
             email: data.email,
             from: "test-front-admin <ai73a@yandex.by>",
             message: `<div style="background-color: lime; padding: 15px">password recovery link:<a href='${data.message}/$token$'>Follow the link</a></div>`,
@@ -16,7 +16,7 @@ export const forgotPasswordAPI = {
     },
 
     setNewPassword(data: NewPasswordRequestType) {
-        return instanceHeroku.post<NewPasswordRequestType, NewPasswordResponseType>('auth/set-new-password', {
+        return instanceLocal.post<NewPasswordRequestType, NewPasswordResponseType>('auth/set-new-password', {
             password: data.password,
             resetPasswordToken: data.resetPasswordToken,
         })
