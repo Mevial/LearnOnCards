@@ -1,11 +1,18 @@
 @import "../../common/sass/mixins";
+
 .page {
   @include wrapper();
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .logout{
+  .error{
+    color: #de2e2e;
+    height: 1em;
+    margin-bottom: 10px;
+  }
+
+  .logout {
     width: 560px;
     text-align: right;
     margin-bottom: -40px;
@@ -16,16 +23,29 @@
     display: flex;
     align-items: center;
 
-    .img {
-      object-fit: cover;
-      width: 200px;
-      height: 200px;
-      border: 3px solid rgba(255, 255, 255, 0.53);
-      border-radius: 50%;
+    .imgBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-right: 50px;
+
+      .img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border: 3px solid rgba(255, 255, 255, 0.53);
+        border-radius: 50%;
+      }
+
+      .changeBtn {
+        z-index: 10;
+        margin-top: -26px;
+        padding: 5px 10px;
+      }
     }
 
-    .description{
+    .description {
       width: 300px;
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 0.2);

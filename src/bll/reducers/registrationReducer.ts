@@ -10,20 +10,20 @@ let initialRegistrationState = {
 
 const registrationReducer = (state: initialRegistrationStateType = initialRegistrationState, action: ActionRegistrationReducerType) => {
     switch (action.type) {
-        case "REGISTER-SET-SUCCESS":
+        case "REGISTER/SET-SUCCESS":
             return {...state, isRegistered: action.value}
-        case "REGISTER-SET-ERROR":
+        case "REGISTER/SET-ERROR":
             return {...state, error: action.error}
-        case "REGISTER-SET-LOADING":
+        case "REGISTER/SET-LOADING":
             return {...state, isLoading: action.value}
         default:
             return state;
     }
 }
 
-export const setIsRegistered = (value: boolean) => ({type: 'REGISTER-SET-SUCCESS', value} as const)
-export const setError = (error: string) => ({type: 'REGISTER-SET-ERROR', error} as const)
-export const setLoading = (value: boolean) => ({type: 'REGISTER-SET-LOADING', value} as const)
+export const setIsRegistered = (value: boolean) => ({type: 'REGISTER/SET-SUCCESS', value} as const)
+export const setError = (error: string) => ({type: 'REGISTER/SET-ERROR', error} as const)
+export const setLoading = (value: boolean) => ({type: 'REGISTER/SET-LOADING', value} as const)
 
 //thunk
 export const register = (email: string, password: string) => (dispatch: Dispatch) => {
