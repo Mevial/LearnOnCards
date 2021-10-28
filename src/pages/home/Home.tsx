@@ -15,6 +15,7 @@ export const Home: React.FC = () => {
             <NavLink to={ROUTES.PASSWORD_RECOVERY}><Button value={'password-recovery'} className={s.btn}/></NavLink>
             <NavLink to={ROUTES.SET_PASSWORD}><Button value={'set-password'} className={s.btn}/></NavLink>
             <NavLink to={ROUTES.ERROR_PAGE}><Button value={'404'} className={s.btn}/></NavLink>
+            <NavLink to={ROUTES.PACKS}><Button value={'Packs'} className={s.btn}/></NavLink>
         </div>
     )
 }

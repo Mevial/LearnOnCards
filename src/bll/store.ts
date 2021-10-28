@@ -4,12 +4,14 @@ import profileReducer from "./reducers/profileReducer";
 import loginReducer from "./reducers/loginReducer";
 import registrationReducer from "./reducers/registrationReducer";
 import {setPasswordReducer} from "./reducers/setPasswordReducer";
+import {packsReducer} from "./reducers/packs-reducer";
 
 const reducers = combineReducers({
     profile: profileReducer,
     login: loginReducer,
     registration: registrationReducer,
     setPassword:setPasswordReducer,
+    packs: packsReducer,
 })
 
 const store = createStore(reducers, applyMiddleware(thunk));

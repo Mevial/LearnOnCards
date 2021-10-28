@@ -21,6 +21,7 @@ export const Header = () => {
             <div>
                 <NavLink style={{opacity: isLoggedIn ? '0' : '1'}} to={ROUTES.LOGIN}><Button value={'Log In'} className={s.btn}/></NavLink>
                 <NavLink style={{opacity: isLoggedIn ? '0' : '1'}} to={ROUTES.REGISTRATION}><Button value={'Sign Up'} className={s.btn}/></NavLink>
+                <NavLink style={{opacity: isLoggedIn ? '0' : '1'}} to={ROUTES.PACKS}><Button value={'Packs'} className={s.btn}/></NavLink>
             </div>
         </div>
     )
