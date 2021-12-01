@@ -6,6 +6,9 @@ import {authMe} from "../bll/reducers/profileReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../bll/store";
 
+//hello
+//first step
+//second
 export const App = () => {
     const isLoggedIn = useSelector<AppStateType>(state => state.login.isLoggedIn)
 
