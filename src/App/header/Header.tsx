@@ -5,7 +5,7 @@ import { ROUTES } from '../routes/Routes';
 import s from './Header.module.scss'
 import {useSelector} from "react-redux";
 import {AppStateType} from "../../bll/store";
-
+//1
 export const Header = () => {
     const isLoggedIn = useSelector((state: AppStateType) => state.login.isLoggedIn)
 
