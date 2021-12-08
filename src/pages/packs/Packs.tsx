@@ -13,6 +13,7 @@ import {
 import {ROUTES} from "../../app/routes/Routes";
 import {Button} from "../../common/components/button/Button";
 import {Range} from "../../common/components/range/Range";
+import Table from "../../common/components/table/Table";
 
 
 
@@ -79,7 +80,7 @@ export const Packs: FC = () => {
                 </Button>
             </NavLink>
             <Range/>
-            {/*<Table />*/}
+            {/*<Table model={[]}  data={''}/>*/}
 
 
         </div>
